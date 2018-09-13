@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Books</title>
+<link rel="stylesheet" type="text/css" href="book_admin.css">
+</head>
+
+<body>
+	<form method="post" action="book_admin.php" enctype="multipart/form-data">
+    <div id="a1">
+    Name:
+	<input type="text" name="name" placeholder="Enter Name..">
+	</div>
+	<div id="a2">
+	Author:
+	<input type="text" name="author" placeholder="Enter Author..">
+	</div>
+	
+	<div id="a3">
+		<p>Summary:</p>
+	
+    <textarea  name="summary" rows="7" cols="100" placeholder="Enter Summary..."></textarea>
+	</div>
+	<div id="a4">
+    Language:
+	<input type="text" name="language" placeholder="Enter Language..">
+	</div>
+	<div id="a5">
+    Cost:
+	<input type="text" name="cost" placeholder="Enter Cost..">
+	</div>
+
+	<div id="a6">
+    Genre:
+	<input type="text" name="genre" placeholder="Entre Genre..">
+	</div>
+
+	<div id="a7">
+    Date:
+	<input type="datetime" name="date" placeholder="yyyy-mm-dd">
+	</div>
+
+	<div id="a8">
+		Coverpage:
+	<input type="file" name="fileToUpload">																																																																					
+	</div>
+	<div id="a9">
+	<input type="submit" value="uploadbookinfo">
+	</div>
+	
+	</form>
+	
+</body>
+</html> 

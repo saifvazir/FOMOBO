@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Movies</title>
+<link rel="stylesheet" type="text/css" href="movie_admin.css">
+</head>
+
+<body>
+	<form method="post" action="movie_admin.php" enctype="multipart/form-data">
+    <div id="a1">
+    Name:
+	<input type="text" name="name" placeholder="Enter Name..">
+	</div>
+	<div id="a2">
+	Writer:
+	<input type="text" name="writer" placeholder="Enter Writer..">
+	</div>
+	
+	<div id="a3">
+		<p>Synopsis:</p>
+	
+    <textarea  name="synopsis" rows="7" cols="100" placeholder="Enter Synopsis..."></textarea>
+	</div>
+	<div id="a4">
+    Cast:
+	<input type="text" name="cast" placeholder="Enter Cast..">
+	</div>
+	<div id="a5">
+   Director:
+	<input type="text" name="director" placeholder="Enter Director..">
+	</div>
+
+	<div id="a6">
+    Awards:
+	<input type="text" name="awards" placeholder="Entre Awards..">
+	</div>
+
+	<div id="a7">
+    Date:
+	<input type="datetime" name="date" placeholder="yyyy-mm-dd">
+	</div>
+
+	<div id="a8">
+		Trailer:
+	<input type="file" name="fileToUpload">																																																																					
+	</div>
+	<div id="a9">
+	<input type="submit" value="uploadmovieinfo">
+	</div>
+	
+	</form>
+	
+</body>
+</html> 

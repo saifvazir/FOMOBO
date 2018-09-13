@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Login</title>
+		<link rel="icon" type="image/icon" href="login1.png" />
+		<link href='http://fonts.googleapis.com/css?family=Raleway:400,800,300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="demo.css" />
+		<link rel="stylesheet" type="text/css" href="set1.css" />
+		<style type="text/css">
+a { text-decoration: none; }
+ p {
+margin-bottom: 10px;
+}
+strong {
+font-weight: bold;
+}
+.uppercase { text-transform: uppercase; }
+
+#login {
+margin: 0px auto;
+width: 300px;
+}
+form fieldset input[type="text"], input[type="password"] {
+background-color: lightgrey;
+border: none;
+border-radius: 3px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+color: #5a5656;
+font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+font-size: 14px;
+height: 43px;
+outline: none;
+padding: 0px 10px;
+width: 280px;
+-webkit-appearance:none;
+}
+form fieldset input[type="submit"] {
+background-color: #008dde;
+border: none;
+border-radius: 3px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+color: #f4f4f4;
+cursor: pointer;
+font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+height: 43px;
+text-transform: uppercase;
+width: 300px;
+-webkit-appearance:none;
+}
+form fieldset a {
+color: white;
+font-size: 10px;
+}
+form fieldset input[type="submit"]:hover{
+	background-color : blue;
+}
+#signup{
+	position : center;
+	cursor: pointer;
+}
+form fieldset a:hover { text-decoration: underline; }
+#alag { text-decoration: none; }
+
+input[type=button]{
+
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 0px 0px;
+    text-decoration: none;
+    margin: 0px 0px;
+    cursor: pointer;
+    position: relative;
+    left: 10px;
+    bottom: 0px;
+}
+</style>
+
+		
+	</head>
+	<body>
+		<div class="container">
+		<br><br>
+		<header class="heading">
+				<h1><a id="fomobo"href="frontpage.html">FOMOBO <span>Login Now!</span></a></h1>
+		</header>
+		</div>
+		<div id="login">
+<form method="POST" action="mylogin.php"  ></p>
+<fieldset>
+<p><input type="text" id="loginbox" name="username" placeholder="Username"  required></p>
+<p><input type="password" id="passwordbox" name="password" placeholder="Password"  required></p>
+<p><center><a id = "alag">Don't have an account yet? </a><a href="signup.html" id="signup"> Register Now</a></center></p>
+
+<p><input type="submit" value="Login" onClick = "checkbox()"></p>
+</form>
+<script>
+function checkbox(){
+	var x = document.getElementById('loginbox').value;
+	var y = document.getElementById('passwordbox').value;
+	
+	if(x==""){
+		loginbox.style.backgroundColor = "pink";
+	}
+	else{
+		loginbox.style.backgroundColor = "lightgrey";
+		
+	}
+	if(y!=""){
+		passwordbox.style.backgroundColor = "lightgrey";
+	}
+	else{
+		passwordbox.style.backgroundColor = "pink";
+	}
+}
+</script>
+</fieldset>
+</div>
+
+	</body>
+</html>

@@ -1,0 +1,95 @@
+#logo{
+	opacity: 1.0;
+    width:120px;
+	height:120px;
+}
+ 
+h1{
+ text-align: center;
+ color: white;
+ font-size:80px;
+ 
+}
+body {
+	background: #2f3238;
+	color: #fff;
+	font-weight: 400;
+	font-size: 1em;
+	font-family: 'Raleway', Arial, sans-serif;
+}
+
+
+div.rest{
+	width:410px;
+	height:500px;
+	border-style: ;
+	position: relative;
+}
+div.mov{
+	width:410px;
+	height:500px;
+	position: relative;
+	left:410px;
+    bottom:500px;
+}
+div.lib{
+	width:410px;
+	height:500px;
+	position: relative;
+	left:820px;
+    bottom:1000px;
+
+
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    position: relative;
+    bottom:250px;
+    left:160px;
+
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.heading {
+	margin: 0 auto;
+	padding: 40px 10px;
+	text-align: center;
+}
+
+.heading h1 {
+	margin: 0;
+	font-weight: 800;
+	font-size: 75px;
+	line-height: 1.3;
+}
+
+.heading h1 span {
+	display: block;
+	padding: 0 0 0.6em 0.1em;
+	color: #74777b;
+	font-weight: 100;
+	font-size: 35%;
+}
+.login {
+	display: block;
+	float: right;
+	
+	font-family: 'Raleway', Arial, sans-serif;
+	font-size:10px;
+}
+.login a:hover{
+    color: #3498db;
+	text-decoration: none;
+}
+.login a{
+    color: #3498db;
+	text-decoration: none;
+}
+}

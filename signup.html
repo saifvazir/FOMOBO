@@ -1,0 +1,180 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Sign Up</title>
+		<link rel="icon" type="image/icon" href="login1.png" />
+		<link href='http://fonts.googleapis.com/css?family=Raleway:400,800,300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="demo.css" />
+		<link rel="stylesheet" type="text/css" href="set1.css" />
+		
+<title>FO.MO.BO</title>
+<style type="text/css">
+body {
+line-height: 1.5em;
+}
+a { text-decoration: none; }
+p {
+margin-bottom: 10px;
+}
+strong {
+font-weight: bold;
+}
+.uppercase { text-transform: uppercase; }
+
+#Submit {
+margin: 0px auto;
+width: 680px;
+}
+form fieldset input[type="text"], input[type="password"] {
+background-color: lightgrey;
+margin : 10px;
+border: none;
+border-radius: 3px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+color: #5a5656;
+font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+font-size: 14px;
+height: 43px;
+outline: none;
+padding: 0px 10px;
+width: 300px;
+-webkit-appearance:none;
+}
+form fieldset input[type="submit"] {
+background-color: #008dde;
+border: none;
+border-radius: 3px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+color: #f4f4f4;
+cursor: pointer;
+font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+height: 43px;
+text-transform: uppercase;
+width: 300px;
+-webkit-appearance:none;
+}
+form fieldset a {
+color: white;
+font-size: 10px;
+}
+form fieldset a:hover{
+	color:white
+}
+form fieldset input[type="submit"]:hover{
+	background-color : blue;
+}
+#login{
+	float: right;
+	cursor: pointer;
+}
+form fieldset a:hover { text-decoration: underline; }
+input[type=button]{
+
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 0px 0px;
+    text-decoration: none;
+    margin: 0px 0px;
+    cursor: pointer;
+    position: relative;
+    left: 10px;
+    bottom: 0px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+		<br><br>
+		<header class="heading">
+				<h1><a id="fomobo"href="frontpage.html">FOMOBO <span>Sign Up Now!</span></a></h1>
+		</header>
+		</div>
+		
+<div id="Submit">
+<form method="POST" action="register.php"  ></p>
+<fieldset>
+<p><input type="text" id="namebox" name="name" placeholder="Name"  required><input type="text" id="usernamebox" name="username" placeholder="Username"  required>
+<input type="password" id="passwordbox" name="password" placeholder="Password"  required><input type="password" id="cpasswordbox" name="cpassword" placeholder="Confirm Password"  required>
+<input type="text" id="emailbox" name="email" placeholder="Email-id"  required><input type="text" id="mobilebox" name="mobile" placeholder="Mobile No."  required></p>
+
+<center><p><input type="submit" value="Submit" onClick = "checkbox();validateEmail()"></p><center>
+</form>
+<script>
+function checkbox(){
+	var x = document.getElementById('usernamebox').value;
+	var y = document.getElementById('passwordbox').value;
+	var a = document.getElementById('namebox').value;
+	var b = document.getElementById('cpasswordbox').value;
+	var c = document.getElementById('emailbox').value;
+	var d = document.getElementById('mobilebox').value;
+	if(x==""){
+		usernamebox.style.backgroundColor = "pink";
+	}
+	else{
+		usernamebox.style.backgroundColor = "lightgrey";
+		
+	}
+	if(y!=""){
+		passwordbox.style.backgroundColor = "lightgrey";
+	}
+	else{
+		passwordbox.style.backgroundColor = "pink";
+	}
+	if(a==""){
+		namebox.style.backgroundColor = "pink";
+	}
+	else{
+		namebox.style.backgroundColor = "lightgrey";
+		
+	}
+	if(b!=""){
+		cpasswordbox.style.backgroundColor = "lightgrey";
+	}
+	else{
+		cpasswordbox.style.backgroundColor = "pink";
+		
+	}
+	if(c==""){
+		emailbox.style.backgroundColor = "pink";
+	}
+	else{
+		emailbox.style.backgroundColor = "lightgrey";
+		
+	}
+	if(d==""){
+		mobilebox.style.backgroundColor = "pink";
+	}
+	else{
+		if(isNaN(d)){
+			alert("Only numbers allowed, please re-enter");
+		
+		}
+		else{
+		mobilebox.style.backgroundColor = "lightgrey";
+		}
+	}
+	function validateEmail()
+      {
+         var emailID = document.getElementById('emailbox').value;
+         atpos = emailID.indexOf("@");
+         dotpos = emailID.lastIndexOf(".");
+         
+         if (atpos < 1 || ( dotpos - atpos < 2 )) 
+         {
+            alert("Please enter correct email ID")
+            emailbox.style.backgroundColor = "pink";
+            return false;
+         }
+         return( true );
+      }
+}
+</script>
+</fieldset>
+</div>
+</body>
+</html>
